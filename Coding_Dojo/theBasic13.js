@@ -52,3 +52,44 @@ function greaterThanY(givenArr, value){
 greaterThanY([1,2,3,4,5], 1);
 greaterThanY([5,6,4,3,2], 3);
 greaterThanY([5,7,8,4,6], 6);
+
+// # Algorithm 6
+// Given an array, print the max, min and average values for that array.
+function minMaxAverage(givenArr){
+    let min = givenArr[0];
+    let max = givenArr[0];
+    let sum = givenArr[0];
+    for(i=1;i<givenArr.length;i++) {
+        sum += givenArr[i];
+        if (givenArr[i] > max){
+            max = givenArr[i];
+        }
+        if (givenArr[i] < min){
+            min = givenArr[i];
+        }
+        
+    }
+    console.log("Max: " + max);
+    console.log("Min: " + min); 
+    console.log("Average: " + (sum / givenArr.length));
+    console.log();    
+}
+minMaxAverage([2,3,1,4,5]);
+minMaxAverage([7,8,6,10,9]);
+
+// console.log(minMaxAverage([1,2,-3,4,-5]));
+// console.log(minMaxAverage([1,-2,3,-4,5]));
+
+// # Algorithm 7
+// Replace any negative array values with 'Dojo'.
+function swapArray(givenArr){
+    for(i=0;i<givenArr.length;i++) {
+        if (givenArr[i] < 0){
+            givenArr[i] = "Dojo"
+        }
+    }
+    return givenArr 
+}
+console.log(swapArray([-1,2,-3,4,-5]));
+console.log(swapArray([1,2,-3,4,-5]));
+console.log(swapArray([1,-2,3,-4,5]));
