@@ -1,3 +1,5 @@
+# Leet Code 217. Contains Duplicate
+
 def containsDuplicate(nums):
     dictNums = {}
     for i in range(len(nums)):

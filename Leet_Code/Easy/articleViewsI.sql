@@ -1,4 +1,4 @@
--- Leet Code 1148. Article Views
+-- Leet Code 1148. Article Views I
 
 SELECT DISTINCT author_id AS 'id'
 FROM Views
