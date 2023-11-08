@@ -4,7 +4,6 @@ def maximumNestingDepthOfTheParentheses(s):
     maxNum = 0
     temp = 0
     for i in range(len(s)):
-        # print(s[i])
         if s[i] == "(":
             temp += 1
             if temp >= maxNum:
