@@ -8,20 +8,13 @@ def differenceBetweenElementSumAndDigitSumOfAnArray(nums):
         elementSum += num
         
         if num > 9:
-            # print(num)
             tempNumStr = str(num)
-            # print(tempNumStr)
             for i in range(len(tempNumStr)):
                 numsSum += int(tempNumStr[i])
         else: 
             numsSum += num
     
     return abs(elementSum - numsSum)  
-    # print(elementSum)
-    # print(numsSum)
-    
-    
 
 print(differenceBetweenElementSumAndDigitSumOfAnArray([1,15,6,3]))
 print(differenceBetweenElementSumAndDigitSumOfAnArray([1,2,3,4]))
-# differenceBetweenElementSumAndDigitSumOfAnArray([1,2,3,4])
