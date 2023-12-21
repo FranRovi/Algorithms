@@ -7,7 +7,6 @@ def  reverseString(s):
         s[i] = s[rightIdx]
         s[rightIdx] = temp
         rightIdx -= 1
-    print(s)
 
 
 reverseString(["h","e","l","l","o"])
