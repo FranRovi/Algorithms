@@ -1,5 +1,8 @@
 # Hacker Rank Algo. Modified Kaprekar Numbers
 
+# Need to check why 10, 100, 1000 ... didnt work?
+
+
 def modifiedKaprekarNums(p, q):
     answer = []
     for i in range(p, q+1):
