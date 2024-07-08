@@ -1,8 +1,8 @@
 # Leet Code Algo 344. Reverse String
 
-def  reverseString(s):
-    rightIdx = -1
-    for i in range(int(len(s)/2)):
+def  reverseString(s): 
+    rightIdx = len(s) - 1
+    for i in range(int(len(s) / 2)):
         temp = s[i]
         s[i] = s[rightIdx]
         s[rightIdx] = temp
