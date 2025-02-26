@@ -29,6 +29,6 @@ def findThePivotIndex(n):
     #         return left_arr[-1]  
     # return -1
     
-print(findPivotIndex(8))
-print(findPivotIndex(1))
-print(findPivotIndex(4))    
+print(findThePivotIndex(8))
+print(findThePivotIndex(1))
+print(findThePivotIndex(4))    
