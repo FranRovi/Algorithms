@@ -1,4 +1,4 @@
-# Leet Code Algo . Minimum Time To Collect all Elements
+# Leet Code Algo 2869. Minimum Time To Collect all Elements
 
 def minOperations(nums, k):
     target_arr = []
