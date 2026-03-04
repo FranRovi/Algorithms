@@ -15,3 +15,7 @@ def goalParserInterpretation(command):
                 answer += "al"
                 idx += 4
     return answer
+
+print(goalParserInterpretation("G()(al)"))
+print(goalParserInterpretation("G()()()()(al)"))
+print(goalParserInterpretation("(al)G(al)()()G"))
